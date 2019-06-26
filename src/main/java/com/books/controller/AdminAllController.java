@@ -29,6 +29,7 @@ public class AdminAllController {
     @ResponseBody
     public AjaxMessage updateAdminMessage(String time, String second) {
         AjaxMessage ajaxMessage = AjaxMessage.success();
+
         TbTjadmin tbTjadmin = new TbTjadmin();
         tbTjadmin.setSecon(Integer.parseInt(second));
         tbTjadmin.setTime(Integer.parseInt(time));

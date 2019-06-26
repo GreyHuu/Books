@@ -9,48 +9,14 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/html" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d02932c-3333-4eeb-a1f8-59106e36afb1" name="Default Changelist" comment="from greyhuhu">
+    <list default="true" id="1d02932c-3333-4eeb-a1f8-59106e36afb1" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminGoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminGoodsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminUserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/dao/TbShangpinMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/dao/TbShangpinMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/dao/TbUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/dao/TbUserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/service/TbGoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/service/TbGoodsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/service/TbUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/service/TbUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/service/impl/TbGoodsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/service/impl/TbGoodsServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/service/impl/TbUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/service/impl/TbUserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TbShangpinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TbShangpinMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/TbUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/TbUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/goods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/showGoods.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/showGoods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/showOrders3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/showOrders3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/showUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/showUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminGoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminGoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/dao/TbShangpinMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/dao/TbShangpinMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/dao/TbUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/dao/TbUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/TbGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/TbGoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/TbUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/TbUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/impl/TbGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/impl/TbGoodsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/impl/TbUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/service/impl/TbUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/mapper/TbShangpinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/mapper/TbShangpinMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/mapper/TbUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/mapper/TbUserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/goods.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/goods.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/user.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/user.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/js/showGoods.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/js/showGoods.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/js/showOrders3.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/js/showOrders3.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/js/showUser.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/js/showUser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/controller/AdminGoodsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/controller/AdminGoodsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/controller/AdminUserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/controller/AdminUserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/dao/TbShangpinMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/dao/TbShangpinMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/dao/TbUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/dao/TbUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/service/TbGoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/service/TbGoodsService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/service/TbUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/service/TbUserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/service/impl/TbGoodsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/service/impl/TbGoodsServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/service/impl/TbUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/service/impl/TbUserServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TbShangpinMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TbShangpinMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/TbUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/TbUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminAllController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminAllController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/back.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/back.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/books/controller/AdminAllController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/controller/AdminAllController.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -97,11 +63,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/showOrders3.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="229" column="39" lean-forward="true" selection-start-line="229" selection-start-column="39" selection-end-line="229" selection-end-column="39" />
+            <state relative-caret-position="1685">
+              <caret line="242" column="73" selection-start-line="242" selection-start-column="73" selection-end-line="242" selection-end-column="73" />
               <folding>
                 <element signature="n#!!block;n#controlData#0" />
                 <element signature="n#!!block;n#beforeChange#0" />
@@ -122,11 +88,33 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="791">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#getAdminMessage#0;class#AdminAllController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="352">
+              <caret line="228" column="70" lean-forward="true" selection-start-line="227" selection-start-column="16" selection-end-line="228" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/allOrders.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="279">
-              <caret line="154" column="50" lean-forward="true" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
+              <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -135,7 +123,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/goods.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="553">
-              <caret line="126" column="46" lean-forward="true" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+              <caret line="126" column="46" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
             </state>
           </provider>
         </entry>
@@ -144,7 +132,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/webapp/js/showGoods.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="241">
-              <caret line="468" column="60" lean-forward="true" selection-start-line="468" selection-start-column="60" selection-end-line="468" selection-end-column="60" />
+              <caret line="468" column="60" selection-start-line="468" selection-start-column="60" selection-end-line="468" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -162,7 +150,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbShangpinMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="492">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+              <caret line="45" selection-start-line="45" selection-end-line="45" />
             </state>
           </provider>
         </entry>
@@ -172,42 +160,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="399">
               <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminUserController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="141" column="41" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="41" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#selectUsersByPage#0;class#AdminUserController#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/user.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2724">
-              <caret line="26" column="31" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminGoodsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="125" column="38" selection-start-line="125" selection-start-column="38" selection-end-line="125" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#deleteGoods#0;class#AdminGoodsController#0" />
-                <element signature="method#adGoods#0;class#AdminGoodsController#0" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -244,8 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/books/util/UploadImg.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/util/Base64Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/UploadImgTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/UploadImgBySiNa.java" />
@@ -276,7 +226,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/OtherController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/AdminOrderController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/interceptor/LoginInterceptor.java" />
@@ -295,6 +244,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/showGoods.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/showUser.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/showOrders3.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" />
+        <option value="$PROJECT_DIR$/readme.md" />
       </list>
     </option>
   </component>
@@ -360,51 +312,6 @@
             <path>
               <item name="Books" type="b2602c69:ProjectViewProjectNode" />
               <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Books" type="b2602c69:ProjectViewProjectNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="books" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -685,7 +592,7 @@
       <workItem from="1561357930246" duration="14518000" />
       <workItem from="1561384730301" duration="941000" />
       <workItem from="1561461432226" duration="10180000" />
-      <workItem from="1561516130277" duration="7208000" />
+      <workItem from="1561516130277" duration="13042000" />
     </task>
     <task id="LOCAL-00001" summary="from greyhuhu">
       <created>1561521772551</created>
@@ -701,11 +608,18 @@
       <option name="project" value="LOCAL" />
       <updated>1561522351946</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="from greyhuhu 12.45">
+      <created>1561524375198</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1561524375198</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="312905000" />
+    <option name="totallyTimeSpent" value="318739000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -760,23 +674,14 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="from greyhuhu" />
-    <option name="LAST_COMMIT_MESSAGE" value="from greyhuhu" />
+    <MESSAGE value="from greyhuhu 12.45" />
+    <option name="LAST_COMMIT_MESSAGE" value="from greyhuhu 12.45" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/books/dao/TbShangpinVerityMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="13" column="39" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/books/service/impl/TbGoodsVerityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1023">
@@ -859,18 +764,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getAdminMessage#0;class#AdminAllController#0" />
-            <element signature="method#updateAdminMessage#0;class#AdminAllController#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1043,13 +936,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="224" column="16" lean-forward="true" selection-start-line="224" selection-start-column="16" selection-end-line="224" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/books/dao/TbShangpinMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="651">
@@ -1145,14 +1031,14 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/goods.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="553">
-          <caret line="126" column="46" lean-forward="true" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
+          <caret line="126" column="46" selection-start-line="126" selection-start-column="46" selection-end-line="126" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/TbShangpinMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="492">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
         </state>
       </provider>
     </entry>
@@ -1173,21 +1059,21 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/allOrders.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
-          <caret line="154" column="50" lean-forward="true" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
+          <caret line="154" column="50" selection-start-line="154" selection-start-column="50" selection-end-line="154" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/showGoods.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
-          <caret line="468" column="60" lean-forward="true" selection-start-line="468" selection-start-column="60" selection-end-line="468" selection-end-column="60" />
+          <caret line="468" column="60" selection-start-line="468" selection-start-column="60" selection-end-line="468" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/js/showOrders3.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="229" column="39" lean-forward="true" selection-start-line="229" selection-start-column="39" selection-end-line="229" selection-end-column="39" />
+        <state relative-caret-position="1685">
+          <caret line="242" column="73" selection-start-line="242" selection-start-column="73" selection-end-line="242" selection-end-column="73" />
           <folding>
             <element signature="n#!!block;n#controlData#0" />
             <element signature="n#!!block;n#beforeChange#0" />
@@ -1203,6 +1089,34 @@
             <element signature="n#!!block;n#delO#0" />
             <element signature="n#!!block;n#showAddOrder#0" />
             <element signature="n#!!block;n#addOrder#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="228" column="70" lean-forward="true" selection-start-line="227" selection-start-column="16" selection-end-line="228" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="5297">
+            <caret line="444" column="14" lean-forward="true" selection-start-line="444" selection-start-column="14" selection-end-line="444" selection-end-column="14" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="791">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#getAdminMessage#0;class#AdminAllController#0" />
           </folding>
         </state>
       </provider>
