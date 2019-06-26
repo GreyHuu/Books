@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>首页</title>
+<!--        <%@ page contentType="text/html;charset=UTF-8" language="java" %>-->
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <!-- 引入组件库 -->
+        <!-- 引入Vue.js -->
+        <script src="https://unpkg.com/vue/dist/vue.js"></script>
+        <!-- 引入样式 -->
+        <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+        <!-- 引入组件库 -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <style type="text/css">
+            @import url("//unpkg.com/element-ui@2.6.3/lib/theme-chalk/index.css");
+
+            .el-header {
+                background-color: rgba(58, 75, 209, 0);
+                color: #333;
+                line-height: 60px;
+            }
+
+            .bottom {
+                margin-top: 13px;
+                line-height: 12px;
+            }
+
+            .button {
+                padding: 0;
+                float: right;
+            }
+
+            .image {
+                width: 100%;
+                display: block;
+            }
+
+            .clearfix:before,
+            .clearfix:after {
+                display: table;
+                content: "";
+            }
+
+            .clearfix:after {
+                clear: both
+            }
+
+            .el-carousel__item h3 {
+                color: #475669;
+                font-size: 18px;
+                opacity: 0.75;
+                line-height: 300px;
+                margin: 0;
+            }
+
+            #gundong {
+                z-index: 3;
+                position: absolute;
+                left: 1240px;
+                top: 89px;
+                z-index: 15;
+                overflow: hidden;
+                height: 278px;
+                width: 250px;
+                border: 1px solid #6699cc;
+                font-size: 14px;
+                color: #336699;
+                line-height: 22px;
+                text-align: left;
+                padding: 10px;
+            }
+
+            #size {
+                border: 0px;
+                width: 1000px;
+                height: 100px
+            }
+
+            #weizhi {
+                z-index: 3;
+                position: absolute;
+                left: 169px;
+                top: 430px;
+                width: 1300px;
+                height: 150px;
+                row-span: 24;
+            }
+        </style>
+    </head>
+<body>
+<div id="app">
+    <el-container style="height:auto; border: 0px solid #95ee8c">
+        <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+            <el-menu :default-openeds="['1', '3']">
+                <el-submenu index="1">
+                    <template slot="title"><i class="el-icon-message"></i>商品分类</template>
+                    <el-menu-item-group>
+                        <template slot="title">年级</template>
+                        <el-menu-item index="1-1">大一</el-menu-item>
+                        <el-menu-item index="1-2">大二</el-menu-item>
+                        <el-menu-item index="1-3">大三</el-menu-item>
+                        <el-menu-item index="1-4">大四</el-menu-item>
+                        <el-menu-item index="1-5">研究生</el-menu-item>
+                    </el-menu-item-group>
+                    <el-menu-item-group title="书籍种类">
+                        <el-menu-item index="2-1">计算机类</el-menu-item>
+                        <el-menu-item index="2-2">气象科学类</el-menu-item>
+                        <el-menu-item index="2-3">光电子器件类</el-menu-item>
+                        <el-menu-item index="2-4">哲学类</el-menu-item>
+                        <el-menu-item index="2-5">科创类</el-menu-item>
+                    </el-menu-item-group>
+<!--                    <%&#45;&#45;<el-submenu index="1-4">&#45;&#45;%>-->
+<!--                    <%&#45;&#45;<template slot="title">选项4</template>&#45;&#45;%>-->
+<!--                    <%&#45;&#45;<el-menu-item index="1-4-1">选项4-1</el-menu-item>&#45;&#45;%>-->
+<!--                    <%&#45;&#45;</el-submenu>&#45;&#45;%>-->
+                </el-submenu>
+                <el-submenu index="2">
+                    <template slot="title"><i class="el-icon-menu"></i>商城</template>
+                    <el-menu-item-group>
+                        <template slot="title">商品列表</template>
+                        <el-menu-item index="2-1">选项1</el-menu-item>
+                        <el-menu-item index="2-2">选项2</el-menu-item>
+                    </el-menu-item-group>
+                    <el-submenu index="2-4">
+                        <template slot="title">购物车</template>
+                        <el-menu-item index="2-4-1">选项4-1</el-menu-item>
+                    </el-submenu>
+                </el-submenu>
+                <el-submenu index="3">
+                    <template slot="title"><i class="el-icon-setting"></i>关于系统</template>
+                </el-submenu>
+            </el-menu>
+        </el-aside>
+
+        <el-container>
+            <el-header style="text-align: right; font-size: 12px">
+                <el-menu mode="horizontal">
+                    <el-menu-item label="校内二手图书交易平台"></el-menu-item>
+                    <el-menu-item index="11" disabled>校内二手图书交易平台</el-menu-item>
+                    <el-menu-item index="1">首页</el-menu-item>
+                    <el-submenu index="2">
+                        <template slot="title">我的工作台</template>
+                        <el-menu-item index="2-1">选项1</el-menu-item>
+                        <el-menu-item index="2-2">选项2</el-menu-item>
+                        <el-menu-item index="2-3">选项3</el-menu-item>
+                        <el-submenu index="2-4">
+                            <template slot="title">选项4</template>
+                            <el-menu-item index="2-4-1">选项1</el-menu-item>
+                            <el-menu-item index="2-4-2">选项2</el-menu-item>
+                            <el-menu-item index="2-4-3">选项3</el-menu-item>
+                        </el-submenu>
+                    </el-submenu>
+                    <el-menu-item index="3">消息中心</el-menu-item>
+                    <el-menu-item index="4">订单管理</el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-breadcrumb-item><a href="">登陆</a></el-breadcrumb-item>
+                    <el-breadcrumb-item>/</el-breadcrumb-item>
+                    <el-breadcrumb-item><a href="">注册</a></el-breadcrumb-item>
+                    <el-menu-item index="5">
+                        <el-input v-model="input" placeholder="请输入内容"></el-input>&nbsp;<el-button type="primary"
+                                                                                                  icon="el-icon-search">
+                        搜索
+                    </el-button>
+                    </el-menu-item>
+
+                </el-menu>
+            </el-header>
+
+            <el-main id="app">
+                <div id="size">
+                    <template id="app1">
+                        <el-carousel indicator-position="outside">
+                            <el-carousel-item v-for="item in 4" :key="item">
+                                <h3>{{ item }}</h3>
+                            </el-carousel-item>
+                        </el-carousel>
+                    </template>
+                </div>
+                <div id="weizhi">
+                    <el-row>
+                        <el-col :span="7" v-for="(o, index) in 12" :key="o" :offset="index > 12 ? 2 : 1">
+                            <el-card :body-style="{padding:'0px'}">
+                                <img src="1.jpg" class="image">
+                                <div style="padding: 0px">
+                                    <span>图书</span>
+                                    <span>${}</span>
+                                    <div class="bottom clearfix">
+                                        <el-button type="text" class="button">加入购物车</el-button>
+                                    </div>
+                                </div>
+                            </el-card>
+                        </el-col>
+                    </el-row>
+                </div>
+            </el-main>
+        </el-container>
+    </el-container>
+</div>
+<div align="center" id="gundong">
+    <div id="gundong1">
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+        1.这是一个公告<br/>
+        2.XXXXXXXXXXXXXXXX<br/>
+    </div>
+    <div id="gundong2"></div>
+</div>
+<script type="text/javascript">
+    var demo = document.getElementById("gundong");
+    var demo1 = document.getElementById("gundong1");
+    var demo2 = document.getElementById("gundong2");
+    var speed = 30;//滚动速度值,值越大速度越慢
+    var nnn = 200 / demo1.offsetHeight;
+    for (i = 0; i < nnn; i++) {
+        demo1.innerHTML += "<br />" + demo1.innerHTML
+    }
+    demo2.innerHTML = demo1.innerHTML    //克隆demo2为demo1
+    function Marquee() {
+        if (demo2.offsetTop - demo.scrollTop <= 0)    //当滚动至demo1与demo2交界时
+            demo.scrollTop -= demo1.offsetHeight    //demo跳到最顶端
+        else {
+            demo.scrollTop++     //如果是横向的 将 所有的 height top 改成 width left
+        }
+    }
+
+    var MyMar = setInterval(Marquee, speed);        //设置定时器
+    demo.onmouseover = function () {
+        clearInterval(MyMar)
+    }    //鼠标经过时清除定时器达到滚动停止的目的
+    demo.onmouseout = function () {
+        MyMar = setInterval(Marquee, speed)
+    }    //鼠标移开时重设定时器
+</script>
+<script>
+    var Main = {};
+var Ctor = Vue.extend(Main)
+new Ctor().$mount('#app')
+new Vue().$mount('#app1')
+</script>
+</body>
+</html>

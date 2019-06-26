@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.books.dao.TbShangpinVerityMapper" >
+  <resultMap id="BaseResultMap" type="com.books.entity.TbShangpinVerity" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="mingcheng" property="mingcheng" jdbcType="VARCHAR" />
+    <result column="YQprice" property="yqprice" jdbcType="DOUBLE" />
+    <result column="price" property="price" jdbcType="DOUBLE" />
+    <result column="shuliang" property="shuliang" jdbcType="INTEGER" />
+    <result column="tupian" property="tupian" jdbcType="VARCHAR" />
+    <result column="goodstype_id" property="goodstypeId" jdbcType="INTEGER" />
+    <result column="verty_status" property="vertyStatus" jdbcType="INTEGER" />
+  </resultMap>
+
+
+  <sql id="Base_Column_List" >
+    id, mingcheng, YQprice, price, shuliang, tupian, goodstype_id, verty_status
+  </sql>
+
+
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from tb_shangpin_verity
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+
+
+  <select id="selectAllVerity" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from tb_shangpin_verity
+  </select>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from tb_shangpin_verity
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+
+  <insert id="insert" parameterType="com.books.entity.TbShangpinVerity" >
+    insert into tb_shangpin_verity (id, mingcheng, YQprice, 
+      price, shuliang, tupian, 
+      goodstype_id, verty_status)
+    values (#{id,jdbcType=INTEGER}, #{mingcheng,jdbcType=VARCHAR}, #{yqprice,jdbcType=DOUBLE}, 
+      #{price,jdbcType=DOUBLE}, #{shuliang,jdbcType=INTEGER}, #{tupian,jdbcType=VARCHAR}, 
+      #{goodstypeId,jdbcType=INTEGER}, #{vertyStatus,jdbcType=INTEGER})
+  </insert>
+
+
+  <insert id="insertSelective" parameterType="com.books.entity.TbShangpinVerity" >
+    insert into tb_shangpin_verity
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="mingcheng != null" >
+        mingcheng,
+      </if>
+      <if test="yqprice != null" >
+        YQprice,
+      </if>
+      <if test="price != null" >
+        price,
+      </if>
+      <if test="shuliang != null" >
+        shuliang,
+      </if>
+      <if test="tupian != null" >
+        tupian,
+      </if>
+      <if test="goodstypeId != null" >
+        goodstype_id,
+      </if>
+      <if test="vertyStatus != null" >
+        verty_status,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="mingcheng != null" >
+        #{mingcheng,jdbcType=VARCHAR},
+      </if>
+      <if test="yqprice != null" >
+        #{yqprice,jdbcType=DOUBLE},
+      </if>
+      <if test="price != null" >
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="shuliang != null" >
+        #{shuliang,jdbcType=INTEGER},
+      </if>
+      <if test="tupian != null" >
+        #{tupian,jdbcType=VARCHAR},
+      </if>
+      <if test="goodstypeId != null" >
+        #{goodstypeId,jdbcType=INTEGER},
+      </if>
+      <if test="vertyStatus != null" >
+        #{vertyStatus,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.books.entity.TbShangpinVerity" >
+    update tb_shangpin_verity
+    <set >
+      <if test="mingcheng != null" >
+        mingcheng = #{mingcheng,jdbcType=VARCHAR},
+      </if>
+      <if test="yqprice != null" >
+        YQprice = #{yqprice,jdbcType=DOUBLE},
+      </if>
+      <if test="price != null" >
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="shuliang != null" >
+        shuliang = #{shuliang,jdbcType=INTEGER},
+      </if>
+      <if test="tupian != null" >
+        tupian = #{tupian,jdbcType=VARCHAR},
+      </if>
+      <if test="goodstypeId != null" >
+        goodstype_id = #{goodstypeId,jdbcType=INTEGER},
+      </if>
+      <if test="vertyStatus != null" >
+        verty_status = #{vertyStatus,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.books.entity.TbShangpinVerity" >
+    update tb_shangpin_verity
+    set
+      verty_status = #{vertyStatus,jdbcType=INTEGER}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

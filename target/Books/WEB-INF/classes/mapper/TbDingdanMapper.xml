@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.books.dao.TbDingdanMapper">
+    <resultMap id="BaseResultMap" type="com.books.entity.TbDingdan">
+        <id column="id" property="id" jdbcType="INTEGER"/>
+        <result column="bianhao" property="bianhao" jdbcType="VARCHAR"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+        <result column="sex" property="sex" jdbcType="VARCHAR"/>
+        <result column="address" property="address" jdbcType="VARCHAR"/>
+        <result column="tel" property="tel" jdbcType="VARCHAR"/>
+        <result column="time" property="time" jdbcType="TIMESTAMP"/>
+        <result column="username" property="username" jdbcType="VARCHAR"/>
+        <result column="zhuangtai" property="zhuangtai" jdbcType="INTEGER"/>
+        <result column="total" property="total" jdbcType="REAL"/>
+        <result column="shop" property="shop" jdbcType="VARCHAR"/>
+    </resultMap>
+    <resultMap id="ResultMapWithBLOBs" type="com.books.entity.TbDingdan" extends="BaseResultMap">
+        <result column="leaveword" property="leaveword" jdbcType="LONGVARCHAR"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, bianhao, name, sex, address, tel, time, username, zhuangtai, total,shop
+  </sql>
+    <sql id="Blob_Column_List">
+    leaveword
+  </sql>
+    <!--  查-->
+    <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer">
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from tb_dingdan
+        where id = #{id,jdbcType=INTEGER}
+    </select>
+    <!--    模糊查询订单-->
+    <select id="searchOrders" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
+        select
+       *
+        from tb_dingdan
+         where bianhao like #{data} or name like #{data};
+    </select>
+    <select id="selectAllOrders" resultMap="ResultMapWithBLOBs">
+        select
+        <include refid="Base_Column_List"/>
+        ,
+        <include refid="Blob_Column_List"/>
+        from tb_dingdan
+    </select>
+    <select id="selectByRepeat" resultMap="ResultMapWithBLOBs" parameterType="java.lang.String">
+         select
+       *
+        from tb_dingdan
+         where bianhao =#{number}
+    </select>
+    <!--  删-->
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from tb_dingdan
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+
+    <!--  增-->
+    <insert id="insert" parameterType="com.books.entity.TbDingdan">
+    insert into tb_dingdan (bianhao, name,
+      sex, address, tel, 
+      time, username, zhuangtai, 
+      total, leaveword,shop)
+    values (#{bianhao,jdbcType=VARCHAR}, #{name,jdbcType=VARCHAR},
+      #{sex,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}, #{tel,jdbcType=VARCHAR}, 
+      #{time,jdbcType=TIMESTAMP}, #{username,jdbcType=VARCHAR}, #{zhuangtai,jdbcType=INTEGER}, 
+      #{total,jdbcType=REAL}, #{leaveword,jdbcType=LONGVARCHAR},#{shop,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.books.entity.TbDingdan">
+        insert into tb_dingdan
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="bianhao != null">
+                bianhao,
+            </if>
+            <if test="name != null">
+                name,
+            </if>
+            <if test="sex != null">
+                sex,
+            </if>
+            <if test="address != null">
+                address,
+            </if>
+            <if test="tel != null">
+                tel,
+            </if>
+            <if test="time != null">
+                time,
+            </if>
+            <if test="username != null">
+                username,
+            </if>
+            <if test="zhuangtai != null">
+                zhuangtai,
+            </if>
+            <if test="total != null">
+                total,
+            </if>
+            <if test="leaveword != null">
+                leaveword,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=INTEGER},
+            </if>
+            <if test="bianhao != null">
+                #{bianhao,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null">
+                #{sex,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="tel != null">
+                #{tel,jdbcType=VARCHAR},
+            </if>
+            <if test="time != null">
+                #{time,jdbcType=TIMESTAMP},
+            </if>
+            <if test="username != null">
+                #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="zhuangtai != null">
+                #{zhuangtai,jdbcType=INTEGER},
+            </if>
+            <if test="total != null">
+                #{total,jdbcType=REAL},
+            </if>
+            <if test="leaveword != null">
+                #{leaveword,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="shop != null">
+                shop = #{shop,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <!--  更-->
+    <update id="updateByPrimaryKeySelective" parameterType="com.books.entity.TbDingdan">
+        update tb_dingdan
+        <set>
+            <if test="bianhao != null">
+                bianhao = #{bianhao,jdbcType=VARCHAR},
+            </if>
+            <if test="name != null">
+                name = #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="sex != null">
+                sex = #{sex,jdbcType=VARCHAR},
+            </if>
+            <if test="address != null">
+                address = #{address,jdbcType=VARCHAR},
+            </if>
+            <if test="tel != null">
+                tel = #{tel,jdbcType=VARCHAR},
+            </if>
+            <if test="time != null">
+                time = #{time,jdbcType=TIMESTAMP},
+            </if>
+            <if test="username != null">
+                username = #{username,jdbcType=VARCHAR},
+            </if>
+            <if test="zhuangtai != null">
+                zhuangtai = #{zhuangtai,jdbcType=INTEGER},
+            </if>
+            <if test="total != null">
+                total = #{total,jdbcType=REAL},
+            </if>
+            <if test="leaveword != null">
+                leaveword = #{leaveword,jdbcType=LONGVARCHAR},
+            </if>
+            <if test="shop != null">
+                shop = #{shop,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=INTEGER}
+    </update>
+    <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.books.entity.TbDingdan">
+    update tb_dingdan
+    set bianhao = #{bianhao,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      username = #{username,jdbcType=VARCHAR},
+      zhuangtai = #{zhuangtai,jdbcType=INTEGER},
+      total = #{total,jdbcType=REAL},
+      leaveword = #{leaveword,jdbcType=LONGVARCHAR},
+      shop = #{shop,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+    <update id="updateByPrimaryKey" parameterType="com.books.entity.TbDingdan">
+    update tb_dingdan
+    set bianhao = #{bianhao,jdbcType=VARCHAR},
+      name = #{name,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=VARCHAR},
+      address = #{address,jdbcType=VARCHAR},
+      tel = #{tel,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      username = #{username,jdbcType=VARCHAR},
+      zhuangtai = #{zhuangtai,jdbcType=INTEGER},
+      total = #{total,jdbcType=REAL},
+      shop = #{shop,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

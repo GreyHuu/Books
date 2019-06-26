@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=<div class=" container">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>图书添加</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row clearfix">
+      <div class="col-md-4 column">
+      </div>
+      <div class=" col-md-4 column">
+        <form role="form" id="more">
+          <div class="form-group">
+            <label for="exampleInputEmail1">名称</label>
+            <input class="form-control" value="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">价格</label>
+            <input class="form-control" value="">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">等级</label>
+            <select class="form-control" value="">
+              <option value="1">一等品</option>
+              <option value="2">二等品</option>
+              <option value="3">三等品</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">图片</label>
+            <input type="file" name="txt_file" id="txt_file" multiple class="file-loading form-control" />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">数量</label>
+            <input type="number" class="form-control" value="0">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">下单姓名</label>
+            <input class="form-control" value="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">简介</label>
+            <textarea class="form-control" value="">
+              </textarea>
+          </div>
+        </form>
+        <button type="button" id="change" class="btn btn-default btn-primary btn-block" onclick="change()">
+          提交</button>
+      </div>
+      <div class="col-md-4 column">
+      </div>
+    </div>
+  </div>
+</body>
+<script>
+  function change() {
+    var newStr = `
+
+    `
+    $("#more").empty();
+    $("#more").append(newStr)
+    $("#change").text("确认")
+  }
+</script>
+
+</html>

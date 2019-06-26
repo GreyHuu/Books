@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  <title>注册</title>
+  <style>
+    body {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      background-color: #eee;
+    }
+
+    .form-register {
+      max-width: 330px;
+      padding: 15px;
+      margin: 0 auto;
+    }
+
+    .form-register .form-register-heading,
+    .form-register .checkbox {
+      margin-bottom: 10px;
+    }
+
+    .form-register .checkbox {
+      font-weight: normal;
+    }
+
+    .form-register .form-control {
+      position: relative;
+      height: auto;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .form-register .form-control:focus {
+      z-index: 2;
+    }
+
+    .form-register input {
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+    }
+    #real_name{
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <form class="form-register">
+      <h2 class="form-register-heading">注册</h2>
+      <!-- id -->
+      <label for="name" class="form-label">昵称</label>
+      <input id="name" class="form-control" type="text" placeholder="多于两个字符">
+
+      <label for="tel">手机号码</label>
+      <input id="tel" class="form-control" type="text" placeholder="11位手机号码">
+
+      <label for="pas">密码</label>
+      <input id="pas" class="form-control" type="text" placeholder="多于六位字符">
+
+      <label for="pas1">重复密码</label>
+      <input id="pas1" class="form-control" type="text">
+
+      <label for="email">邮箱</label>
+      <input id="email" class="form-control" type="email">
+
+      <label for="qq">QQ号码</label>
+      <input id="qq" class="form-control" type="text" placeholder="QQ">
+
+      <!-- 忘记密码提示 -->
+      <!-- 忘记密码答案 -->
+
+      <label for="address">地址</label>
+      <input id="address" class="form-control" type="text" placeholder="地址">
+
+      <!-- 注册日期 -->
+      <!-- 登录次数 -->
+      <!-- 真实姓名 -->
+
+      <label for="real_name">头像</label>
+      <input id="real_name" class="form-control" type="text" value="images/user.png">
+
+      <input id="res_btn" class="btn btn-lg btn-primary btn-block" type="button" value="注 册">
+
+
+    </form>
+  </div>
+</body>
+
+</html>

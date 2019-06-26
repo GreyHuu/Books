@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户中心</title>
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <!-- 引入Vue.js -->
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <style type="text/css">
+        @import url("//unpkg.com/element-ui@2.6.3/lib/theme-chalk/index.css");
+        .el-header {
+            background-color: rgba(58, 75, 209, 0);
+            color: #333;
+            line-height: 60px;
+        }
+        .bottom {
+            margin-top: 13px;
+            line-height: 12px;
+        }
+
+        .button {
+            padding: 0;
+            float: right;
+        }
+
+        .image {
+            width: 100%;
+            display: block;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            content: "";
+        }
+
+        .clearfix:after {
+            clear: both
+        }
+        .el-carousel__item h3 {
+            color: #475669;
+            font-size: 18px;
+            opacity: 0.75;
+            line-height: 300px;
+            margin: 0;
+        }
+        #gundong{
+            z-index:3;
+            position:absolute;
+            left:1240px;
+            top:89px;
+            z-index:15;
+            overflow:hidden;
+            height:278px;
+            width:250px;
+            border:1px solid #6699cc;
+            font-size:14px;
+            color:#336699;
+            line-height:22px;
+            text-align:left;
+            padding:10px;
+        }
+        #size{
+            border:0px;
+            width:1000px;
+            height:100px
+        }
+        #weizhi{
+            z-index:3;
+            position:absolute;
+            left:169px;
+            top:430px;
+            width:1300px;
+            height:150px;
+            row-span: 24;
+        }
+        .text {
+            font-size: 14px;
+        }
+
+        .item {
+            margin-bottom: 18px;
+        }
+
+        .clearfix:before,
+        .clearfix:after {
+            display: table;
+            content: "";
+        }
+        .clearfix:after {
+            clear: both
+        }
+
+        .box-card {
+            width: 480px;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+
+    <el-container style="height:auto; border: 0px solid #95ee8c">
+        <el-aside width="200px" style="background-color: rgb(238, 241, 246)">
+            <el-menu :default-openeds="['1', '3']">
+                <el-submenu index="1">
+                    <template slot="title"><i class="el-icon-message"></i>全部功能</template>
+                    <el-menu-item-group>
+                        <el-menu-item index="1-1">我的购物车</el-menu-item>
+                        <el-menu-item index="1-2">已买到的宝贝</el-menu-item>
+                        <el-menu-item index="1-3">评价管理</el-menu-item>
+                    </el-menu-item-group>
+                </el-submenu>
+            </el-menu>
+        </el-aside>
+
+        <el-container>
+            <el-header style="text-align: right; font-size: 12px">
+                <el-menu mode="horizontal">
+                    <el-menu-item label="校内二手图书交易平台"></el-menu-item>
+                    <el-menu-item index="11" disabled>校内二手图书交易平台</el-menu-item>
+                    <el-menu-item index="1">首页</el-menu-item>
+                    <el-submenu index="2">
+                        <template slot="title">账户设置</template>
+                        <el-submenu index="2-4">
+                            <template slot="title">安全设置</template>
+                            <el-menu-item index="2-4-1">修改登录密码</el-menu-item>
+                            <el-menu-item index="2-4-2">手机绑定</el-menu-item>
+                            <el-menu-item index="2-4-3">密保问题设置</el-menu-item>
+                        </el-submenu>
+
+                        <el-submenu index="2-4">
+                            <template slot="title">个人资料</template>
+                            <el-menu-item index="2-4-1">收货地址</el-menu-item>
+                            <el-menu-item index="2-4-2">修改个人信息</el-menu-item>
+                        </el-submenu>
+                    </el-submenu>
+                    <el-menu-item index="3" >消息中心</el-menu-item>
+                    <el-menu-item index="4">订单管理</el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-menu-item disabled></el-menu-item>
+                    <el-breadcrumb-item><a href="">登陆</a></el-breadcrumb-item>
+                    <el-breadcrumb-item>/</el-breadcrumb-item>
+                    <el-breadcrumb-item><a href="">注册</a></el-breadcrumb-item>
+                    <el-menu-item index="5"><el-input v-model="input" placeholder="请输入内容"></el-input>&nbsp;<el-button type="primary" icon="el-icon-search">搜索</el-button></el-menu-item>
+
+                </el-menu>
+            </el-header>
+
+            <el-main id="app">
+                <el-card class="box-card">
+                    <div slot="header" class="clearfix">
+                        <span>zzy（昵称）</span>
+                        <el-button style="float: right; padding: 3px 0" type="text">操作按钮</el-button>
+                    </div>
+                    <div>
+                        <table>
+                            <tr><td><a href="">待付款</a></td></tr>
+                            <tr><td><a href="">待发货</a></td></tr>
+                            <tr><td><a href="">待收货</a></td></tr>
+                            <tr><td><a href="">待评价</a></td></tr>
+                        </table>
+                    </div>
+                </el-card>
+            </el-main>
+        </el-container>
+    </el-container>
+</div>
+</body>
+</html>
+<script>
+    var Main = {
+    };
+    var Ctor = Vue.extend(Main)
+    new Ctor().$mount('#app')
+    new Vue().$mount('#app1')
+</script>
