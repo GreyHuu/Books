@@ -10,13 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d02932c-3333-4eeb-a1f8-59106e36afb1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminAllController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/classes/com/books/controller/AdminAllController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/back.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Books/WEB-INF/views/admin/back.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/books/controller/AdminAllController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/books/controller/AdminAllController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -88,15 +82,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="791">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="233">
+              <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#getAdminMessage#0;class#AdminAllController#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Readme.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="13919">
+                <caret line="449" column="36" selection-start-line="449" selection-start-column="36" selection-end-line="449" selection-end-column="36" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -196,7 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/books/util/Base64Utils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/UploadImgTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/UploadImgBySiNa.java" />
         <option value="$PROJECT_DIR$/html/goods.html" />
@@ -247,6 +252,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/back.jsp" />
         <option value="$PROJECT_DIR$/readme.md" />
+        <option value="$PROJECT_DIR$/Readme.md" />
       </list>
     </option>
   </component>
@@ -592,7 +598,7 @@
       <workItem from="1561357930246" duration="14518000" />
       <workItem from="1561384730301" duration="941000" />
       <workItem from="1561461432226" duration="10180000" />
-      <workItem from="1561516130277" duration="13042000" />
+      <workItem from="1561516130277" duration="13532000" />
     </task>
     <task id="LOCAL-00001" summary="from greyhuhu">
       <created>1561521772551</created>
@@ -615,11 +621,25 @@
       <option name="project" value="LOCAL" />
       <updated>1561524375198</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="from greyhuhu 16.50">
+      <created>1561539041059</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1561539041059</updated>
+    </task>
+    <task id="LOCAL-00005" summary="from greyhuhu 16.50">
+      <created>1561539155172</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1561539155172</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="318739000" />
+    <option name="totallyTimeSpent" value="319229000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -675,7 +695,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="from greyhuhu" />
     <MESSAGE value="from greyhuhu 12.45" />
-    <option name="LAST_COMMIT_MESSAGE" value="from greyhuhu 12.45" />
+    <MESSAGE value="from greyhuhu 16.50" />
+    <option name="LAST_COMMIT_MESSAGE" value="from greyhuhu 16.50" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -1100,24 +1121,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="5297">
-            <caret line="444" column="14" lean-forward="true" selection-start-line="444" selection-start-column="14" selection-end-line="444" selection-end-column="14" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/books/controller/AdminAllController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="791">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        <state relative-caret-position="233">
+          <caret line="8" column="60" lean-forward="true" selection-start-line="8" selection-start-column="60" selection-end-line="8" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getAdminMessage#0;class#AdminAllController#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="13919">
+            <caret line="449" column="36" selection-start-line="449" selection-start-column="36" selection-end-line="449" selection-end-column="36" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
