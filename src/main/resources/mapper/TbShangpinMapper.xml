@@ -36,6 +36,13 @@
     from tb_shangpin
   </select>
 
+    <select id="searchGoods" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select
+        *
+    from tb_shangpin
+    where mingcheng like #{data,jdbcType=VARCHAR}
+  </select>
+
 
     <delete id="deleteGoodByType" parameterType="java.lang.Integer">
     delete from tb_shangpin

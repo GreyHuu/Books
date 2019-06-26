@@ -18,4 +18,6 @@ public interface TbUserMapper {
     int updateByPrimaryKey(TbUser record);
 
     List<TbUser> selectAllUser();
+
+    List<TbUser> searchUser(String data);
 }

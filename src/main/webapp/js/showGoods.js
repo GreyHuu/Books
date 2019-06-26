@@ -467,6 +467,7 @@ function showDetail(id) {
                     `
             );
             $('#modal-container-show-orders').modal("show");
+            $("#no").show();
             return 0;
         }
     }
@@ -676,22 +677,27 @@ function delO(id) {
 /**
  * 查找函数  对于编号和姓名的模糊查找
  * */
-function searchOrders(data) {
+function searchGoods() {
+    let data = $("#search").val();
     if (data === "")
         toastr.warning("请输入查询信息！");
     else {
         $.ajax({
             type: "post",
-            utl: "searchOrder.do",
+            url: "../goods/searchGoods.do",
             data: {
                 data: data
             },
-            success: function (result) {
-                if (result.extend.result == 0) {
-
+            success: function (data) {
+                //console.log(data);
+                if (data.msg === 200)
+                    console.log("error");
+                else if (data.extend.result === 0) {
+                    toastr.success("无结果");
                 } else {
-                    var orders = eval(result.extend.list);
-                    console.log(orders);
+                    let orders = data.extend.list;
+                    //console.log(orders);
+                    showSearchOrders(orders);
                 }
             },
             error: function (XMLHttpResponse, textStatus, errorThrown) {
@@ -703,6 +709,38 @@ function searchOrders(data) {
 
         })
     }
+}
+
+function showSearchOrders(orderList) {
+    $("#show_orders").empty();
+    for (let index in orderList) {
+        let id = orderList[index].id;
+        let mingcheng = orderList[index].mingcheng;
+        let yqprice = orderList[index].yqprice;
+        let price = orderList[index].price;
+        let shuliang = orderList[index].shuliang;
+        let tupian = orderList[index].tupian;
+        let goodstypeId = orderList[index].goodstypeId;
+        let goodstype;
+        for (let j = 0; j < goodType.length; j++) {
+            if (goodType[j].id === goodstypeId)
+                goodstype = goodType[j].typename;
+        }
+        $("#show_orders").append(`
+                            <tr>
+                                <td> ` + mingcheng + `</td>
+                                <td> ` + yqprice + `</td>
+                                <td>` + price + `</td>
+                                <td> ` + shuliang + `</td>
+                                <td >` + goodstype + `</td>
+                                <td>
+                                    <button onclick="showDetail(` + id + `)" class="btn btn-default">查看</button> 
+                                    <button class="btn btn-default" onclick="deleteOrder(` + id + `)" onclick="">删除</button>
+                                 </td>
+                            </tr>
+        `)
+    }
+    $("#no").hide();
 }
 
 /**

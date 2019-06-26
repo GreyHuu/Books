@@ -1,137 +1,3 @@
-// function change() {
-//     var newStr = `
-//          <div class="form-group">
-//            <label for="exampleInputEmail1">编号</label>
-//            <input class="form-control" value="20190514001">
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">收货人姓名</label>
-//            <input class="form-control" value="田丰慧">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">收货人地址</label>
-//            <input class="form-control" value="成都信息工程大学">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">收货人手机号</label>
-//            <input class="form-control" value="17602603997">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">买家留言</label>
-//            <input class="form-control" value="v">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">下单时间</label>
-//            <input class="form-control" value="2019-05-14-19:00">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">下单姓名</label>
-//            <input class="form-control" value="greyhuhu">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">订单状态</label>
-//            <input class="form-control" value="已发货">
-//
-//          </div>
-//          <div class="form-group">
-//            <label for="exampleInputPassword1">总金额</label>
-//            <input class="form-control" value="196.25">
-//
-//          </div>
-//       `
-//     $("#more").empty();
-//     $("#more").append(newStr);
-//     $("#change").text("确认");
-// }
-
-// function ok() {
-//     var idnumber = $("#idnumber").val();
-//     var name = $("#name").val();
-//     var pwd = $("#pwd").val();
-//     var mailbox = $("#mailbox").val();
-//     var phone = $("#phone").val();
-//     var QQ = $("#QQ").val();
-//     var ipaddress = $("#ipaddress").val();
-//     var answer = $("#answer").val();
-//     var reply = $("#reply").val();
-//     var address = $("#name").val();
-//     var time = $("#time").val();
-//     var loginpage = $("#loginpage").val();
-//     var realname = $("#realname").val();
-//
-//     var flagid = /^\d+$/.test(idnumber);
-//     var flagphone = /^((0\d{2,3}-\d{7,8})|(1[3584]\d{9}))$/.test(phone);
-//     var flagmailbox = true;
-//     var flagqq = /^\d+$/.test(QQ);
-//
-//
-//     if (idnumber == "") {
-//         alert("id不能为空！");
-//         return 0;
-//     } else if (name == "") {
-//         alert("名字不能为空！");
-//         return 0;
-//     } else if (pwd == "") {
-//         alert("密码不能为空！");
-//         return 0;
-//     } else if (mailbox == "") {
-//         alert("邮箱不能为空！");
-//         return 0;
-//     } else if (phone == "") {
-//         alert("联系方式不能为空！");
-//         return 0;
-//     } else if (QQ == "") {
-//         alert("QQ不能为空！");
-//         return 0;
-//     } else if (ipaddress == "") {
-//         alert("ip地址不能为空！");
-//         return 0;
-//     } else if (answer == "") {
-//         alert("答案提示不能为空！");
-//         return 0;
-//     } else if (reply == "") {
-//         alert("答案回答不能为空！");
-//         return 0;
-//     } else if (address == "") {
-//         alert("地址不能为空！");
-//         return 0;
-//     } else if (time == "") {
-//         alert("注册时间不能为空！");
-//         return 0;
-//     } else if (loginpage == "") {
-//         alert("登录页面不能为空！");
-//         return 0;
-//     } else if (realname == "") {
-//         alert("真实姓名不能为空！");
-//         return 0;
-//     } else {
-//         if (flagid == true) {
-//             if (flagphone == true) {
-//                 if (flagqq == true) {
-//                     if (flagmailbox == true) {
-//                         more.submit();
-//                     } else {
-//                         alert("请正确输入你的邮箱！")
-//                     }
-//                 } else {
-//                     alert("请正确输入你的qq号码（必须是数字哦）~");
-//                 }
-//             } else {
-//                 alert("请正确输入你的电话");
-//                 return 0;
-//             }
-//         } else {
-//             alert("请正确输入你的id(必须是数字哦！)");
-//             return 0;
-//         }
-//     }
-// }
 let lastResult;//存储上一次的数据
 let firstTime = true;     //判断是否展现 加载过程动画  只有首次加载显示
 let user;                       //全部的用户
@@ -451,6 +317,7 @@ function showUser(id) {
                     `
             );
             $('#modal-container-show-users').modal("show");
+            $("#no").show();
             return 0;
         }
     }
@@ -477,7 +344,7 @@ function changeChange(id) {
 
 
         let trueTime = time.split(" ")[0] + "T" + time.split(" ")[1].split(":")[0] + ":" + time.split(" ")[1].split(":")[1];
-       // console.log(trueTime);
+        // console.log(trueTime);
 
         if (id === orderList[index].id) {
             $("#modal-body").empty();
@@ -628,22 +495,27 @@ function delO(id) {
 /**
  * 查找函数  对于编号和姓名的模糊查找
  * */
-function searchOrders(data) {
+function searchUser() {
+    let data = $("#search").val();
     if (data === "")
         toastr.warning("请输入查询信息！");
     else {
         $.ajax({
             type: "post",
-            utl: "searchOrder.do",
+            url: "../user/searchUsers.do",
             data: {
                 data: data
             },
-            success: function (result) {
-                if (result.extend.result == 0) {
-
+            success: function (data) {
+                //console.log(data);
+                if (data.msg === 200)
+                    console.log("error");
+                else if (data.extend.result === 0) {
+                    toastr.success("无结果");
                 } else {
-                    var orders = eval(result.extend.list);
-                    console.log(orders);
+                    let orders = data.extend.list;
+                    //console.log(orders);
+                    showSearchOrders(orders);
                 }
             },
             error: function (XMLHttpResponse, textStatus, errorThrown) {
@@ -655,6 +527,43 @@ function searchOrders(data) {
 
         })
     }
+}
+
+function showSearchOrders(orderList) {
+    $("#show_users").empty();
+    for (let index in orderList) {
+        let id = orderList[index].id;
+        let pwd = orderList[index].pwd;
+        let name = orderList[index].name;
+        let email = orderList[index].email;
+        let tel = orderList[index].tel;
+        let qq = orderList[index].qq;
+        let regtime = toUTCtime(orderList[index].regtime);
+        let dizhi = orderList[index].dizhi;
+        let truename = orderList[index].truename;
+        let imgurl = orderList[index].imgurl;
+        let logincishu = orderList[index].logincishu;
+        $("#show_users").append(`
+              <tr>
+                    <td>` + id + `</td>
+                    <td>` + name + `</td>
+                    <td>` + pwd + `</td>
+                    <td>` + email + `</td>
+                    <td>` + tel + `</td>
+                    <td>` + qq + `</td>
+                    <td>` + dizhi + `</td>
+                    <td>` + regtime + `</td>
+                    <td>` + logincishu + `</td>
+                    <td>` + truename + `</td>
+                    <td><img width="25px" src="../` + imgurl + `" alt="头像"></td>
+                    <td>
+                        <button onclick="showUser(` + id + `)" class="btn btn-default">查看</button>
+                         <button onclick="deleteUser(` + id + `)" class="btn btn-default">删除</button>
+                    </td>
+               </tr>
+        `)
+    }
+    $("#no").hide();
 }
 
 /**
@@ -715,10 +624,12 @@ function showAddUser() {
     )
     $("#modal-container-add-users").modal("show");
 }
+
 //改变头像的预览图
-function changeImgUrl(){
-    $("#image-header").attr("src",$("#img-url").val());
+function changeImgUrl() {
+    $("#image-header").attr("src", $("#img-url").val());
 }
+
 //提交添加的数据
 function saveUser() {
     let name = $("#name").val();
@@ -730,9 +641,9 @@ function saveUser() {
     let registerTime = new Date().getTime();
     let logincishu = 0;
     let truename = $("#truename").val();
-    let imgUrl = $("#img-url").val().split("/")[1]+"/"+$("#img-url").val().split("/")[2]
+    let imgUrl = $("#img-url").val().split("/")[1] + "/" + $("#img-url").val().split("/")[2]
 
-    if (pwd === "" || name === "" || dizhi === "" || !isPoneAvailable(tel) || registerTime === null || truename === ""||!isEmail(email)) {
+    if (pwd === "" || name === "" || dizhi === "" || !isPoneAvailable(tel) || registerTime === null || truename === "" || !isEmail(email)) {
         //console.log(id + " " + number + " " + tel + " " + name + " " + sex + " " + address + " " + leaveWord + " " + time + " " + username + " " + status + " " + money);
         toastr.error("输入完整正确的信息！")
     } else {
@@ -788,15 +699,17 @@ function isPoneAvailable(poneInput) {
         return true;
     }
 }
+
 //判断是否是邮箱
-function isEmail(str){
-    var re=/^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+function isEmail(str) {
+    var re = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
     if (re.test(str) != true) {
         return false;
-    }else{
+    } else {
         return true;
     }
 }
+
 //是否是float型
 function isFloat(n) {
     if (!(/^-?\d*\.\d+$/.test(n))) {

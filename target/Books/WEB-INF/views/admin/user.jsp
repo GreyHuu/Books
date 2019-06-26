@@ -115,12 +115,12 @@
 
         <div class="col-md-13 column">
             <div class="col-md-4">
-                <form class="navbar-form navbar-left" role="search">
+                <div class="navbar-form navbar-left" role="search">
                     <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input type="text" id="search" class="form-control" placeholder="Search">
                     </div>
-                    <button type="submit" class="btn btn-default">搜索</button>
-                </form>
+                    <button class="btn btn-default" onclick="searchUser()">搜索</button>
+                </div>
             </div>
             <div class="col-md-offset-7 col-md-1">
                 <button class="btn-default btn" style="margin: 10px;" onclick="showAddUser()">新增</button>

@@ -222,6 +222,7 @@ function showOrders3(orderList) {
  * */
 //展现一个订单的详细信息   参数是id
 function showDetail(id) {
+    $("#no").show();
     let orderList = eval(lastResult.extend.orders);
     for (let index in orderList) {
         let number = orderList[index].bianhao;
@@ -310,6 +311,7 @@ function showDetail(id) {
         }
     }
 }
+
 //变为可修改状态
 function changeChange(id) {
     let orderList = eval(lastResult.extend.orders);

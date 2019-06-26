@@ -119,4 +119,24 @@ public class AdminGoodsController {
         }
 
     }
+
+    //查询商品
+    @RequestMapping(value = "/searchGoods.do")
+    @ResponseBody
+    public AjaxMessage searchGoods(String data) {
+        AjaxMessage ajaxMessage;
+        List<TbShangpin> results = tbGoodsService.searchGoods(data);
+        if (results == null)
+            return AjaxMessage.fail();
+        else if (results.size() == 0) {  //无结果
+            ajaxMessage = AjaxMessage.success();
+            ajaxMessage.add("result", 0);
+            return ajaxMessage;
+        } else {
+            ajaxMessage = AjaxMessage.success();
+            ajaxMessage.add("result", 1);
+            ajaxMessage.add("list", results);
+            return ajaxMessage;
+        }
+    }
 }

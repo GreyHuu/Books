@@ -7,10 +7,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 public class TbUserServiceImpl implements TbUserService {
     @Autowired
     private TbUserMapper tbUserMapper;
+
     @Override
     public List<TbUser> selectAllUser() {
         return tbUserMapper.selectAllUser();
@@ -29,5 +31,11 @@ public class TbUserServiceImpl implements TbUserService {
     @Override
     public int insertUser(TbUser tbUser) {
         return tbUserMapper.insertSelective(tbUser);
+    }
+
+    @Override
+    public List<TbUser> searchUser(String data) {
+        data = "%" + data + "%";
+        return tbUserMapper.searchUser(data);
     }
 }

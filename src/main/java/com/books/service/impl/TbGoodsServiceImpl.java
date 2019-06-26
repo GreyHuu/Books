@@ -37,4 +37,10 @@ public class TbGoodsServiceImpl implements TbGoodsService {
     public TbShangpin getGoodsById(int id) {
         return tbGoodsService.selectByPrimaryKey(id);
     }
+
+    @Override
+    public List<TbShangpin> searchGoods(String data) {
+        data = "%" + data + "%";
+        return tbGoodsService.searchGoods(data);
+    }
 }

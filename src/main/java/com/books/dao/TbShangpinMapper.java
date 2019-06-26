@@ -21,5 +21,7 @@ public interface TbShangpinMapper {
 
     List<TbShangpin> selectGoodsByType(int type);
 
+    List<TbShangpin> searchGoods(String data);
+
     int deleteGoodByType(int type);
 }
