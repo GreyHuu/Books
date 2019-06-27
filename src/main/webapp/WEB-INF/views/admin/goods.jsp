@@ -25,6 +25,7 @@
     <script src="../js/showGoods.js"></script>
     <link href="../css/font-awesome.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
+    <title>商品</title>
     <style>
         * {
             margin: 0;

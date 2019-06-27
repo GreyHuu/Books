@@ -24,6 +24,7 @@
     <script src="../js/PerfectLoad.js"></script>
     <link href="../css/font-awesome.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
+    <title>管理员</title>
     <style>
         .first {
             width: 600px;

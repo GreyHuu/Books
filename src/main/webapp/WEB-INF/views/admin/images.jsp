@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="../css/gonggao.css">
     <link href="../css/font-awesome.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
+    <title>公告</title>
     <style>
     </style>
 </head>

@@ -52,7 +52,7 @@ public class AdminUserController {
         else {
             ajaxMessage.add("orders", tbUserPageInfo.getList());
             ajaxMessage.add("total", tbUserPageInfo.getTotal());
-            ajaxMessage.add("total", tbUserPageInfo.getPages());
+            ajaxMessage.add("pages", tbUserPageInfo.getPages());
             ajaxMessage.add("last", tbUserPageInfo.isIsLastPage());
             ajaxMessage.add("first", tbUserPageInfo.isIsFirstPage());
         }

@@ -25,6 +25,7 @@
     <link href="../css/font-awesome.css" rel="stylesheet"/>
     <link href="../css/style.css" rel="stylesheet"/>
     <script src="../js/showUser.js"></script>
+    <title>用户</title>
     <style>
         .modal-title {
             font-family: fantasy;

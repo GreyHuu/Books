@@ -11,10 +11,12 @@ $(document).ready(function () {
 
 //用于刷新数据
 function init(pageNumber, pageSize, num) {
+    for (let item = 1; item <= 5; item++)
+        $("#page_" + item).show();
     //默认第一页是选中的
     $("#page_" + num).attr("class", "active");
     //查询并得到第一次的数据
-    changePage(pageNumber, pageSize);
+    changePage(pageNumber, pageSize, num);
 }
 
 
@@ -186,7 +188,7 @@ function changeStatus(id, item) {
  * @param pageSize
  */
 //根据 页数 页面大小 处理数据
-function changePage(pageNumber, pageSize) {
+function changePage(pageNumber, pageSize, num) {
     //进度遮罩框
     if (firstTime === true)
         $.bootstrapLoading.start({loadingTips: "正在处理数据，请稍候..."});
@@ -197,7 +199,7 @@ function changePage(pageNumber, pageSize) {
         data: {"pageNumber": pageNumber, "pageSize": pageSize},
         success: function (result) {
             //console.log(result.msg);
-            controlData(result);
+            controlData(result, num);
             //将本次数据返回
             lastResult = result;
             console.log(lastResult);
@@ -208,7 +210,7 @@ function changePage(pageNumber, pageSize) {
 }
 
 //处理分页数据
-function controlData(result) {
+function controlData(result, num) {
 
     //处理成对象
     let orderList = eval(result.extend.orders);
@@ -217,6 +219,15 @@ function controlData(result) {
     if (firstTime === true) {
         setTimeout($.bootstrapLoading.end(), 1000);
         firstTime = !firstTime;
+    }
+    let totalPages = parseInt(result.extend.pages);
+    if (totalPages < 5) {
+        for (let item = 5; item > totalPages; item--) {
+            $("#page_" + item).hide();
+        }
+        if (totalPages < parseInt(num)) {
+            init(totalPages, 5, totalPages);
+        }
     }
 }
 
